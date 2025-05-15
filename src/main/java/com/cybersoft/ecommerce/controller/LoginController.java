@@ -21,6 +21,8 @@ public class LoginController {
         BaseResponse response = new BaseResponse();
         response.setData(token);
         response.setCode(200);
+
         return ResponseEntity.ok(response);
     }
+
 }

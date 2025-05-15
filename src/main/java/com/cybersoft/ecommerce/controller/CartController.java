@@ -60,7 +60,7 @@ public class CartController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(baseResponse);
         }
     }
-    @DeleteMapping("/delete")
+    @DeleteMapping("")
     public ResponseEntity<String> deleteCartByUserId() {
         try {
             boolean isDeleted = cartService.deleteCartByUserId();
